@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color-1: #d22222;
+  --primary-color-2: #fd5c42;
+  --Secundary-color-1: #212529;
+  --Secundary-color-2: #ededed;
+  --font-primary: 'Comfortaa';
+  --font-secundary: 'Contrail One';
+  --font-primary-color: #fff;
+}
+
+section {
+  padding: 1rem;
+  min-height: 47rem;
+  padding-inline: 4rem;
+}
+
+/*====SECTION1====================*/
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Secundary-color-2);
+}
+
+.section1 h1 {
+  color: var(--primary-color-2);
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  font-weight: bold;
+
+  text-align: center;
+
+  max-width: 45rem;
+
+  margin-block: 2.5rem;
+}
+
+embed {
+  width: 50rem;
+  height: 28rem;
+}
+
+.section1 a {
+  margin-block: 2.5rem;
+
+  border-radius: 2rem;
+
+  width: 25rem;
+}
+.section1 button {
+  color: var(--font-primary-color);
+  font-size: 2rem;
+  font-family: var(--font-primary);
+  box-shadow: rgb(83, 81, 81) 0.1em 0.1em 0.1em;
+
+  background-color: var(--primary-color-2);
+
+  border: none;
+  border-radius: 2rem;
+
+  width: 25rem;
+  height: 4.5rem;
+  cursor: pointer;
+}
+
+/*====SECTION2====================*/
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--Secundary-color-1);
+
+}
+
+.section2 h3 {
+  color: var(--Secundary-color-2);
+
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+
+  margin-block: 2.5rem;
+}
+
+.section2 h2 {
+  color: var(--Secundary-color-2);
+  background-color: var(--primary-color-1);
+
+  font-family: var(--font-secundary);
+  font-size: 2rem;
+
+  text-align: center;
+
+  padding-inline: 3rem;
+  padding-block: 0.8rem;
+
+  max-width: 65rem;
+}
+
+.section2 p {
+  margin-block: 2rem;
+  max-width: 70rem;
+
+  color: var(--Secundary-color-2);
+  font-family: var(--font-primary-color);
+  font-size: 2rem;
+
+  line-height: 5rem;
+  text-align: justify;
+}
+
+.section2 p:nth-last-child(2) {
+  color: var(--font-primary-color);
+  font-family: var(--font-secundary);
+  font-size: 2.5rem;
+
+  text-align: center;
+
+  max-width: 80rem;
+}
+
+.section2 button {
+  color: var(--Secundary-color-2);
+  font-size: 2rem;
+  font-family: var(--font-primary);
+
+  box-shadow: rgb(27, 27, 27) 0.1em 0.1em 0.1em;
+
+  background-color: var(--primary-color-1);
+
+  border: none;
+  border-radius: 2rem;
+
+  margin-block: 2.5rem;
+  width: 25rem;
+  height: 4.5rem;
+  cursor: pointer;
+}
+.section2 a {
+  color: var(--font-primary-color);
+  text-decoration: none;
+}
+
+/*====SECTION3====================*/
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: var(--Secundary-color-2);
+}
+
+.section3 h3 {
+  color: var(--primary-color-2);
+
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  margin-block: 2.5rem;
+}
+
+.section3 .depoimentos {
+  display: flex;
+
+  flex-wrap: wrap;
+  max-width: 60rem;
+  margin-block: 2rem;
+}
+
+.section3 img {
+  height: 20rem;
+}
+
+.section3 button {
+  color: var(--Secundary-color);
+  font-size: 2rem;
+  font-family: var(--font-primary);
+
+  box-shadow: rgb(27, 27, 27) 0.1em 0.1em 0.1em;
+
+  background-color: var(--primary-color-2);
+
+  border: none;
+  border-radius: 2rem;
+
+  margin-block: 2.5rem;
+  width: 25rem;
+  height: 4.5rem;
+  cursor: pointer;
+}
+
+.section3 a {
+  color: var(--font-primary-color);
+  text-decoration: none;
+}
+
+/*====SECTION4====================*/
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+/*  background: var(--Secundary-color-1);*/
+  background: url(/assets/img/padrão/people-gef35c406c_1920.jpg);
+  background-attachment: fixed;
+  background-blend-mode: multiply; /*multiply, darken, lighten*/
+  background-color: rgba(238, 109, 105, 0.445);
+}
+
+.section4 h3 {
+  color: var(--Secundary-color-2);
+
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+
+  margin-block: 2.5rem;
+}
