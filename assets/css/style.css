@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+ 
 }
 
 :root {
@@ -77,7 +78,6 @@ embed {
   align-items: center;
 
   background-color: var(--Secundary-color-1);
-
 }
 
 .section2 h3 {
@@ -209,12 +209,13 @@ embed {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
-/*  background: var(--Secundary-color-1);*/
+  /*  background: var(--Secundary-color-1);*/
   background: url(/assets/img/padrão/people-gef35c406c_1920.jpg);
   background-attachment: fixed;
   background-blend-mode: multiply; /*multiply, darken, lighten*/
-  background-color: rgba(0, 0, 15, 0.445);
+  background-color: rgba(0,30, 15, 0.445);
 }
 
 .section4 h3 {
@@ -224,39 +225,171 @@ embed {
   font-size: 2.5rem;
 
   margin-block: 2.5rem;
+  
 }
 
-.section4 .main-container{
+.section4 .main-container {
   background: rgba(217, 217, 217, 0.18);
-  
+
   border-radius: 2rem;
 
   margin-bottom: 3rem;
-  width: 80rem;
-  height: 40rem;
+  max-width: 70rem;
+  min-height: 45rem;
 
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
+  
+}
+.section4 .img1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2rem;
+}
+.section4 .img2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 1.5rem;
 }
 
-.section4 .container{
+.section4 #imgcoracao{
   
-  background-color: #F5F0F0;
+  height: 6rem; 
+  max-width: 7rem;
+}
+.section4 #imgboca{
+  
+  height: 7rem; 
+  max-width: 7rem;
+}
+
+.section4 .container {
+  background-color: #f5f0f0;
 
   border-radius: 2rem;
 
-  margin-block: 2rem;
-  height: 36rem;
+  border: #212529 solid 2px;
+  margin-block: 3rem;
+  margin-inline: 3rem;
+  min-height: 39rem;
+  max-width: 27.1rem;  
+
+}
+
+.section4 h2 {
+  background-color: #d22222;
+
+  font-family: var(--font-secundary);
+  font-size: 2rem;
+  color: var(--font-primary-color);
+
+  text-align: center;
+  line-height: 2;
+
+
+  height: 4rem;
+  max-width: 27.1rem;
+}
+
+
+.section4 p{
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  text-align: start;
+  line-height: 3.5rem;
   width: 25rem;
+
+  padding:1.8rem;
+
+}
+
+.section4 button {
+  color: var(--Secundary-color);
+  font-size: 2rem;
+  font-family: var(--font-primary);
+
+  box-shadow: rgb(27, 27, 27) 0.1em 0.1em 0.1em;
+
+  background-color: var(--primary-color-2);
+
+  border: none;
+  border-radius: 2rem;
+
+  margin-block: 2.5rem;
+  width: 25rem;
+  height: 4.5rem;
+  cursor: pointer;
+}
+
+.section4 a {
+  color: var(--font-primary-color);
+  text-decoration: none;
+}
+
+/*====SECTION5====================*/
+
+.section5{
+  height: 70rem;
+  padding: 0;
+
+}
+
+.section5 .container{
+  display: flex;
+ 
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.section5 h3{
+  color: var(--primary-color-2);
+
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  margin-block: 2.5rem;
+  padding-block: 0;
+  max-width: 100%;
+
+
+}
+
+.section5 .content{
+  margin-block: 1rem;
+  margin-inline: 2rem;
+  max-width: 40%;
+  display: flex; 
+ 
+  justify-content: center;
+  align-items: center;
+
+}
+
+.section5 p{
   
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  text-align: start;
+  line-height: 2.5rem;
+  text-align:start;
+
+  width: 40rem;
+  height: 5rem;
+  padding-block: 0.8rem;
+
 }
 
-/*
-.section4 .title{
-  background-color: #D22222;
-
-  height: 3rem;
-  width: 3rem;
+.section5 svg{
+ 
 }
+
+/*====SECTION6====================*/
 
