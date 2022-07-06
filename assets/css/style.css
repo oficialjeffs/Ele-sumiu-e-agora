@@ -9,6 +9,7 @@
   --primary-color-2: #fd5c42;
   --Secundary-color-1: #212529;
   --Secundary-color-2: #ededed;
+  --Secundary-color-3:#731F1F;
   --font-primary: 'Comfortaa';
   --font-secundary: 'Contrail One';
   --font-primary-color: #fff;
@@ -40,6 +41,7 @@ section {
   max-width: 45rem;
 
   margin-block: 2.5rem;
+
 }
 
 embed {
@@ -52,7 +54,7 @@ embed {
 
   border-radius: 2rem;
 
-  width: 25rem;
+  max-width: 25rem;
 }
 .section1 button {
   color: var(--font-primary-color);
@@ -65,7 +67,7 @@ embed {
   border: none;
   border-radius: 2rem;
 
-  width: 25rem;
+  max-width: 25rem;
   height: 4.5rem;
   cursor: pointer;
 }
@@ -296,7 +298,6 @@ embed {
   max-width: 27.1rem;
 }
 
-
 .section4 p{
   font-family: var(--font-primary);
   font-size: 1.2rem;
@@ -334,8 +335,14 @@ embed {
 /*====SECTION5====================*/
 
 .section5{
-  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  height: 80rem;
   padding: 0;
+
 
 }
 
@@ -387,12 +394,40 @@ embed {
 
 }
 
+.section5 button {
+  color: var(--Secundary-color);
+  font-size: 2rem;
+  font-family: var(--font-primary);
+
+  box-shadow: rgb(27, 27, 27) 0.1em 0.1em 0.1em;
+
+  background-color: var(--primary-color-2);
+
+  border: none;
+  border-radius: 2rem;
+
+  margin-block: 2.5rem;
+  width: 25rem;
+  height: 4.5rem;
+  cursor: pointer;
+}
+
+.section5 a {
+  color: var(--font-primary-color);
+  text-decoration: none;
+}
+
+
 
 /*====SECTION6====================*/
 
 .section6{
   display: flex;
   flex-direction: column;
+  
+  margin: 0;  
+  padding: 0;
+
   align-items: center;
   
 }
@@ -410,11 +445,10 @@ embed {
 
   background-color: #731F1F;
 
-  width: 100vw;
-  height: 10rem;
+  width: 100%;
+  min-height: 10rem;
   
 }
-
 .section6 h2 {
   color: #731F1F;
 
@@ -427,31 +461,45 @@ embed {
   padding-inline: 3rem;
   padding-block: 0.8rem;
 
-  max-width: 65rem;
+  max-width: 65;
 }
 .section6 .beneficios{
   display: flex;
+  flex-wrap: nowrap;
+
+  margin-bottom: 3rem;
+  margin-inline: 2rem;
+  
+  max-width: 100%;
+  
   
 }
 .section6 .column1{
   display: flex;
   flex-direction: column;
+  
+  max-width: 50%;
+  
   align-items: center;
-  padding-left: 2rem;
-
 }
 .section6 .column2{
   display: flex;
   flex-direction: column;
+
+  max-width: 100%;
+
   align-items: center;
- 
 }
 
 .section6 .content{
-  padding: 1rem;
-  width: 55rem;
-  align-items: center;
   display: flex;
+
+  padding: 1rem;
+
+  width: 100%;
+  
+  align-items: center;
+
   
 }
 
@@ -460,10 +508,34 @@ embed {
   color: #995959;
   font-size: 2rem;
   text-align:start;
+  width:auto;
 
 }
 
-/*====SECTION6====================*/
+.section6 button {
+  color: var(--Secundary-color);
+  font-size: 2rem;
+  font-family: var(--font-primary);
+
+  box-shadow: rgb(27, 27, 27) 0.1em 0.1em 0.1em;
+
+  background-color: var(--primary-color-2);
+
+  border: none;
+  border-radius: 2rem;
+
+  margin-block: 2.5rem;
+  width: 25rem;
+  height: 4.5rem;
+  cursor: pointer;
+}
+
+.section6 a {
+  color: var(--font-primary-color);
+  text-decoration: none;
+}
+
+/*====SECTION7====================*/
 
 .section7{
   display: flex;
@@ -472,7 +544,8 @@ embed {
 
   background-color: var(--Secundary-color-1);
 
-  background: url(/assets/img/padrão/everton-vila-AsahNlC0VhQ-unsplash.jpg); 
+  background: url(/assets/img/padrão/annette-sousa-HW-ep3fC4Kc-unsplash.jpg); 
+  background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply; /*multiply, darken, lighten*/
   background-color: rgba(0,30, 15, 0.445);
@@ -480,7 +553,7 @@ embed {
 .section7 .box{
   border-radius: 2rem;
   background-color: #e9e5e5;
-  width: 40rem;
+  max-width: 35rem;
 }
 .section7 .box .title{
   text-align: center;
@@ -589,6 +662,409 @@ embed {
 }
 
 .section7 img{
-  margin-inline: 3.5rem;
+  margin-inline: 1rem;
 
+}
+
+footer{
+  display: flex;
+  padding: 0.5rem;
+  height: 5rem;
+  background-color: var(--primary-color-1);
+
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  font-family: var(--font-primary);
+  color: var(--font-primary-color);
+  font-size: 0.7rem;
+
+  text-align: center;
+  line-height: 0.9rem;
+}
+
+footer  a{
+  text-decoration: none;
+  color: var(--font-primary-color);
+  font-weight: bold;
+  font-size:small;
+
+  padding: 0;
+  margin-top: 0;
+}
+
+
+
+@media (max-width: 450px){
+
+  section{
+    min-height: 35rem;
+  }
+/*SECTION1=============*/
+  .section1 h1{
+    font-size: 1.5rem;
+   
+  }
+  embed {
+    width: 20rem;
+    height: 13rem;
+  }
+  .section1 button{
+    font-size: 1.3rem;
+    width:15rem;
+    height: 3rem;
+  }
+  .section1 a{
+    width:15rem;
+    height: 3rem;
+  }
+/*SECTION2=============*/
+  .section2 h3{
+    font-size: 1.1rem;
+  }
+  .section2 h2 {
+
+    font-size: 1.2rem;
+  
+    text-align: center;
+  
+    padding-inline: 1rem;
+    padding-block: 0.8rem;
+  
+    width: 19rem;
+  }
+  .section2 p {
+    margin-block: 0.8rem;
+    width: 19rem;
+
+    font-size: 1.27rem;
+  
+    line-height: 2.3rem;
+    
+  }
+  .section2 p:nth-last-child(2) {
+    color: var(--font-primary-color);
+    font-family: var(--font-secundary);
+    font-size: 1.2rem;
+  
+    text-align:center;
+  
+    width: 20rem;
+  }
+  .section2 a{
+    font-size: 1.3rem;
+
+    line-height: 3rem;
+
+    width:15rem;
+    height: 3rem;
+  }
+  .section2 button{
+    width:15rem;
+    height: 3.5rem;
+  
+    margin-block: 1rem;
+  }
+  /*SECTION3=============*/
+  .section3 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    margin-block: 2.5rem;
+  }
+  .section3 .depoimentos {
+    justify-content: center;
+  }
+  .section3 a{
+    font-size: 1.3rem;
+
+    line-height: 3rem;
+
+    width:15rem;
+    height: 3rem;
+  }
+  .section3 button{
+    width:15rem;
+    height: 3.5rem;
+  
+    margin-block: 1rem;
+  }
+   /*SECTION4=============*/
+  .section4 h3{
+    font-size: 1.5rem;
+  }
+  .section4 .main-container {
+    margin-bottom: 1rem;
+    width: 22rem;
+  }
+  .section4 .img1{
+    margin-block: 1rem;
+  }
+  .section4 .img2{
+    margin-block: 1rem;
+  }
+  .section4 #imgcoracao{
+    height: 2rem; 
+    max-width: 3rem;
+  }
+  .section4 #imgboca{
+    
+    height: 3rem; 
+    max-width: 3rem;
+  }
+  .section4 .container {  
+
+    margin-block: 1rem;
+    
+    min-height: 29rem;
+    width: 20rem;  
+  
+  }
+  .section4 h2 {  
+    font-size: 1.8rem;
+    line-height: 2.2;
+  
+    max-width:20rem;
+  }
+  .section4 p{
+    display: flex;
+    font-size: 0.76rem;
+    justify-content: center;
+    align-items: center;
+
+    width: 15rem;
+    padding: 0.5;
+  }
+  .section4 a{
+    font-size: 1.3rem;
+
+    line-height: 3rem;
+
+    width:15rem;
+    height: 3rem;
+  }
+  .section4 button{
+    width:15rem;
+    height: 3.5rem;
+  
+    margin-block: 1rem;
+  }
+   /*SECTION5=============*/
+   .section5{
+    height: 80rem;
+  }
+   .section5 .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-inline: 0;
+    
+  } 
+  .section5 h3{
+    font-size: 1.8rem;
+  
+    margin-block: 2.5rem;  
+  }
+  .section5 .content{
+    margin-block: 2rem;
+    margin-inline:0rem;
+    width: 20;
+    display: flex; 
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    align-items:center;
+  
+  }
+  .section5 img{
+    width: 2.5rem;
+    height:2.5rem;
+  }
+  .section5 p{ 
+    font-size: 0.8rem;
+    line-height: 1rem;
+  
+    text-align: center;
+
+    width: 19rem;
+    height: 3rem;
+    padding-block: 0.8rem;
+
+    margin-bottom: 0;
+  
+  }
+  .section5 a{
+    font-size: 1.3rem;
+
+    line-height: 3rem;
+
+    width:10rem;
+    height: 3rem;
+  }
+  .section5 button{
+    margin-block:5rem;
+    width:15rem;
+    height: 3.5rem;
+  
+    margin-block: 1rem;
+  }
+ /*SECTION6=============*/
+  .section6{
+    display: flex;
+    flex-direction: column;
+    margin: 0;  
+    padding: 0;
+    
+  }
+  .section6 h3 {
+    font-size: 1rem;
+    margin-block: 1rem;
+
+    background-color: var(--Secundary-color-3);
+
+    min-height: 5rem;
+    
+  }
+  .section6 h2 {
+    font-size: 1.5rem;
+
+    padding-inline: 1rem;
+
+    max-width: 65;
+  }
+  .section6 .beneficios{
+    display: flex;
+    flex-wrap: nowrap;
+
+    margin-bottom: 3rem;
+    margin-inline-start: 3.5rem;
+    
+    max-width: 100%;
+  }
+  .section6 .column1{
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 20rem;
+    
+    align-items: center;
+  }
+  .section6 .column2{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 20rem;
+
+    align-items: center;
+  }
+  .section6 .content{
+    display: flex;
+
+    padding: 1rem;
+
+    width: 100%;
+
+    align-items: center;
+    
+  }
+  .section6 .content p{
+    font-family: var(--font-primary);
+    color: #995959;
+    font-size: 0.8rem;
+    text-align:start;
+    width:7rem;
+
+  }
+  .section6 img{
+    width: 3rem;
+    height: 3rem;
+  }
+  .section6 a{
+    font-size: 1.3rem;
+
+    line-height: 3rem;
+
+    width:15rem;
+    height: 3rem;
+  }
+  .section6 button{
+    width:15rem;
+    height: 3.5rem;
+  
+    margin-block: 1rem;
+  }
+  /*SECTION7=============*/
+  .section7 .box{
+    border-radius: 2rem;
+    background-color: #e9e5e5;
+    width:20rem;
+  }
+  .section7 .box .title{
+    font-size: 10px;
+    line-height: 1.5em;
+
+  }
+  .section7 .box .subtitle{ 
+    font-size: 13px;
+    font-weight: 700;
+
+    margin-block: 1rem;
+
+  }
+  .section7 .box .info-valor{
+    font-size: 13px;
+    margin-block: 1rem;
+  }
+  .section7 .box .valor{
+    font-size: 28px;
+    margin-block: 1rem;
+  }
+  .section7 .parcela{
+    font-size: 13px;
+
+    margin-inline: 3rem;
+    margin-block: 1rem;
+    padding: 0.5rem;
+
+  }
+  .section7 .button{  
+    font-size: 0.7rem;
+    text-align: center;
+
+    margin-block: 0.5rem;
+    margin-inline: 3rem;
+    height: 3rem;
+
+    line-height: 3rem;  
+  }
+  .section7 .description{
+
+    font-size: 15px;
+
+    line-height: 1.5em;
+
+  }
+  .section7 img{
+    margin-inline: 0.8rem;
+    width: 17rem;
+    padding: 0.5rem;
+  }
+  footer{
+    padding: 0.5rem;
+    height: 2rem;
+  }
+  footer p{
+    font-size: 0.0rem;
+    line-height: 0rem;
+    padding:0rem;
+  }
+  footer  a{
+    font-size:9px;
+    line-height: 1rem;
+    padding: 0;
+    margin-top: 0;
+  }
 }
